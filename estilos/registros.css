@@ -1,0 +1,136 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;    
+    font-family: Arial, Helvetica, sans-serif;     
+}
+body{
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' version='1.1' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:svgjs='http://svgjs.dev/svgjs' width='1920' height='1080' preserveAspectRatio='none' viewBox='0 0 1920 1080'%3e%3cg mask='url(%26quot%3b%23SvgjsMask1086%26quot%3b)' fill='none'%3e%3crect width='1920' height='1080' x='0' y='0' fill='rgba(16%2c 3%2c 35%2c 1)'%3e%3c/rect%3e%3cpath d='M1021.51 600.94 a274.84 274.84 0 1 0 549.68 0 a274.84 274.84 0 1 0 -549.68 0z' fill='rgba(78%2c 8%2c 79%2c 0.4)' class='triangle-float2'%3e%3c/path%3e%3cpath d='M1152.47 723.12 a346.45 346.45 0 1 0 692.9 0 a346.45 346.45 0 1 0 -692.9 0z' fill='rgba(78%2c 8%2c 79%2c 0.4)' class='triangle-float1'%3e%3c/path%3e%3cpath d='M643.98 396.82 a193.45 193.45 0 1 0 386.9 0 a193.45 193.45 0 1 0 -386.9 0z' fill='rgba(78%2c 8%2c 79%2c 0.4)' class='triangle-float1'%3e%3c/path%3e%3cpath d='M253.23 127.84 a308.13 308.13 0 1 0 616.26 0 a308.13 308.13 0 1 0 -616.26 0z' fill='rgba(78%2c 8%2c 79%2c 0.4)' class='triangle-float3'%3e%3c/path%3e%3cpath d='M571.83 540.28 a218.64 218.64 0 1 0 437.28 0 a218.64 218.64 0 1 0 -437.28 0z' fill='rgba(78%2c 8%2c 79%2c 0.4)' class='triangle-float2'%3e%3c/path%3e%3cpath d='M1648.89 1058.66 a247.12 247.12 0 1 0 494.24 0 a247.12 247.12 0 1 0 -494.24 0z' fill='rgba(78%2c 8%2c 79%2c 0.4)' class='triangle-float1'%3e%3c/path%3e%3cpath d='M1548.6 21.75 a204.06 204.06 0 1 0 408.12 0 a204.06 204.06 0 1 0 -408.12 0z' fill='rgba(78%2c 8%2c 79%2c 0.4)' class='triangle-float2'%3e%3c/path%3e%3cpath d='M-126.78 1061.27 a272.68 272.68 0 1 0 545.36 0 a272.68 272.68 0 1 0 -545.36 0z' fill='rgba(78%2c 8%2c 79%2c 0.4)' class='triangle-float3'%3e%3c/path%3e%3cpath d='M-138.65 906.52 a231.65 231.65 0 1 0 463.3 0 a231.65 231.65 0 1 0 -463.3 0z' fill='rgba(78%2c 8%2c 79%2c 0.4)' class='triangle-float2'%3e%3c/path%3e%3c/g%3e%3cdefs%3e%3cmask id='SvgjsMask1086'%3e%3crect width='1920' height='1080' fill='white'%3e%3c/rect%3e%3c/mask%3e%3cstyle%3e %40keyframes float1 %7b 0%25%7btransform: translate(0%2c 0)%7d 50%25%7btransform: translate(-10px%2c 0)%7d 100%25%7btransform: translate(0%2c 0)%7d %7d .triangle-float1 %7b animation: float1 5s infinite%3b %7d %40keyframes float2 %7b 0%25%7btransform: translate(0%2c 0)%7d 50%25%7btransform: translate(-5px%2c -5px)%7d 100%25%7btransform: translate(0%2c 0)%7d %7d .triangle-float2 %7b animation: float2 4s infinite%3b %7d %40keyframes float3 %7b 0%25%7btransform: translate(0%2c 0)%7d 50%25%7btransform: translate(0%2c -10px)%7d 100%25%7btransform: translate(0%2c 0)%7d %7d .triangle-float3 %7b animation: float3 6s infinite%3b %7d %3c/style%3e%3c/defs%3e%3c/svg%3e");   
+    background-size: cover;    
+}
+.contenedor{
+    background-color: rgba(255, 255, 255, 0.158);
+    border-radius: 15px;
+    width: 85vw;
+    height: 90vh;
+    margin: 5vh auto;
+    display: flex;
+    justify-content: space-evenly;    
+    box-shadow: 5px 5px 30px 0px rgba(112, 0, 146, 0.336);
+    align-items: center;      
+    
+
+}
+.contenedor .img{
+    height: 84vh;
+    width: auto;
+    
+}
+.contenedor .img img{
+    width: 100%;
+    height: 100%;
+    border-radius: 15px;
+}
+.contenedor .form{
+    background-color: rgba(255, 255, 255, 0.39);
+    border-radius: 15px;
+    width: 28vw;    
+    height: 84vh;
+    
+}
+
+.contenedor .form .inputs{    
+    height: 45vh;    
+    width: 28vw;    
+    justify-content: center;
+    align-items: center;    
+    padding-top: 30px;
+}
+.contenedor .form .inputs .label{    
+    display: flex;
+    width: 90%;
+    height: 10vh;    
+    margin: auto;
+    
+}
+.contenedor .form .inputs .label label{
+    font-size: 1rem;    
+    text-transform: capitalize;
+    
+    margin: auto;
+    
+
+}
+
+.contenedor .form .inputs input{
+    display: flex;
+    height: 5vh;
+    width: 80%;    
+    margin: 7vh auto;
+    border-style: none;
+    padding: 10px;
+    border-radius: 5px;
+    color: black;
+    cursor: pointer;
+
+}
+.contenedor .form .inputs input:focus{
+    box-shadow: 5px 5px 10px 0px rgba(214, 77, 255, 0.61);
+}
+.contenedor .form .registrarse{
+    height: 15vh;    
+    width: 28vw;    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+}
+.contenedor .form .registrarse input{
+    width: 18vw;
+    height: 7vh;
+    border-radius: 10px;
+    border-style: none;
+    font-size: 1.2rem;
+    background-color: rgb(85, 10, 155);
+    color: white;
+    box-shadow: 5px 5px 10px 0px rgba(112, 0, 146, 0.336);
+    cursor: pointer;
+    transition: 0.7s;
+}
+.contenedor .form .registrarse input:hover{
+    transform: scale(1.01);
+    box-shadow: 5px 5px 10px 0px rgba(207, 48, 255, 0.527);
+}
+.contenedor .form .ingresar{
+    height: 15vh;    
+    width: 28vw;    
+    display: flex;    
+    align-items: center;
+    
+    margin: auto;
+    
+}
+.contenedor .form .ingresar .ingcont{
+    margin: auto;
+    
+}
+.contenedor .form .ingresar .label{    
+    display: flex;
+    width: 100%;    
+}
+.contenedor .form .ingresar label{ 
+    font-size: 1rem;
+    opacity: 80%;
+}
+.contenedor .form .ingresar .a{            
+    display: flex;
+    width: 100%;    
+    justify-content: center;
+}
+.contenedor .form .ingresar a{
+    font-size: 1rem;
+    font-weight: 400;    
+    text-transform: uppercase;
+
+    color: rgb(85, 10, 155);
+}          

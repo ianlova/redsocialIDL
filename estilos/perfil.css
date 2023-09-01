@@ -1,0 +1,423 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;    
+    font-family: Arial, Helvetica, sans-serif; 
+}
+body{
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' version='1.1' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:svgjs='http://svgjs.dev/svgjs' width='1920' height='1080' preserveAspectRatio='none' viewBox='0 0 1920 1080'%3e%3cg mask='url(%26quot%3b%23SvgjsMask1086%26quot%3b)' fill='none'%3e%3crect width='1920' height='1080' x='0' y='0' fill='rgba(16%2c 3%2c 35%2c 1)'%3e%3c/rect%3e%3cpath d='M1021.51 600.94 a274.84 274.84 0 1 0 549.68 0 a274.84 274.84 0 1 0 -549.68 0z' fill='rgba(78%2c 8%2c 79%2c 0.4)' class='triangle-float2'%3e%3c/path%3e%3cpath d='M1152.47 723.12 a346.45 346.45 0 1 0 692.9 0 a346.45 346.45 0 1 0 -692.9 0z' fill='rgba(78%2c 8%2c 79%2c 0.4)' class='triangle-float1'%3e%3c/path%3e%3cpath d='M643.98 396.82 a193.45 193.45 0 1 0 386.9 0 a193.45 193.45 0 1 0 -386.9 0z' fill='rgba(78%2c 8%2c 79%2c 0.4)' class='triangle-float1'%3e%3c/path%3e%3cpath d='M253.23 127.84 a308.13 308.13 0 1 0 616.26 0 a308.13 308.13 0 1 0 -616.26 0z' fill='rgba(78%2c 8%2c 79%2c 0.4)' class='triangle-float3'%3e%3c/path%3e%3cpath d='M571.83 540.28 a218.64 218.64 0 1 0 437.28 0 a218.64 218.64 0 1 0 -437.28 0z' fill='rgba(78%2c 8%2c 79%2c 0.4)' class='triangle-float2'%3e%3c/path%3e%3cpath d='M1648.89 1058.66 a247.12 247.12 0 1 0 494.24 0 a247.12 247.12 0 1 0 -494.24 0z' fill='rgba(78%2c 8%2c 79%2c 0.4)' class='triangle-float1'%3e%3c/path%3e%3cpath d='M1548.6 21.75 a204.06 204.06 0 1 0 408.12 0 a204.06 204.06 0 1 0 -408.12 0z' fill='rgba(78%2c 8%2c 79%2c 0.4)' class='triangle-float2'%3e%3c/path%3e%3cpath d='M-126.78 1061.27 a272.68 272.68 0 1 0 545.36 0 a272.68 272.68 0 1 0 -545.36 0z' fill='rgba(78%2c 8%2c 79%2c 0.4)' class='triangle-float3'%3e%3c/path%3e%3cpath d='M-138.65 906.52 a231.65 231.65 0 1 0 463.3 0 a231.65 231.65 0 1 0 -463.3 0z' fill='rgba(78%2c 8%2c 79%2c 0.4)' class='triangle-float2'%3e%3c/path%3e%3c/g%3e%3cdefs%3e%3cmask id='SvgjsMask1086'%3e%3crect width='1920' height='1080' fill='white'%3e%3c/rect%3e%3c/mask%3e%3cstyle%3e %40keyframes float1 %7b 0%25%7btransform: translate(0%2c 0)%7d 50%25%7btransform: translate(-10px%2c 0)%7d 100%25%7btransform: translate(0%2c 0)%7d %7d .triangle-float1 %7b animation: float1 5s infinite%3b %7d %40keyframes float2 %7b 0%25%7btransform: translate(0%2c 0)%7d 50%25%7btransform: translate(-5px%2c -5px)%7d 100%25%7btransform: translate(0%2c 0)%7d %7d .triangle-float2 %7b animation: float2 4s infinite%3b %7d %40keyframes float3 %7b 0%25%7btransform: translate(0%2c 0)%7d 50%25%7btransform: translate(0%2c -10px)%7d 100%25%7btransform: translate(0%2c 0)%7d %7d .triangle-float3 %7b animation: float3 6s infinite%3b %7d %3c/style%3e%3c/defs%3e%3c/svg%3e");    
+    background-size: cover;    
+    width: 100%;
+    height: 100%;
+}
+img{
+    width: 2vw;
+    height: auto;
+}
+.todo{
+    display: flex;
+}
+header{
+    position: absolute;
+    top: 0px;
+    width: 100%;
+    height: 7vh;
+    background-color: rgb(161, 75, 178);
+    z-index: 10000000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    transition: 0.7s;
+}
+    header .contHeader{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: 15px;
+        width: 95vw;
+        height: 100%;
+    }
+    header label{
+        color: white;
+        font-size: 1rem;
+    }
+    header .perfil{
+        position: relative;
+    }
+    header .perfil .perfilBoton{
+        position: absolute;
+        top: 0px;
+        right: 0px;
+        bottom: 0px;
+        left: 0px;
+        width: 100%;
+        height: 100%;
+        opacity: 0;
+        cursor: pointer;
+    }
+
+    header .perfil img{
+        width: 3vw;
+        height: auto;
+        right: 0;
+        padding: 5px;
+        margin: auto;
+        cursor: pointer;
+    }    
+.todo{
+    display: flex;
+    height: 93vh;  
+    /* 93 */
+    margin-top: 7vh;
+}
+    .todo .menu{
+        display: flex;
+        width: 5vw;
+        height: 100%; 
+        /* 93 */
+        background-color: rgba(255, 255, 255, 0.158);
+        flex-direction: column;    
+    }
+        .todo .menu .secciones{
+            display: flex;
+            height: 25vh;
+            width: 100%;
+            margin-top: 10px;
+            flex-direction: column;
+        }
+            .todo .menu .secciones .seccion{
+                width: 2.7vw;
+                height: 2.7vw;
+                display: flex;                
+                margin: auto;
+                flex-direction: column;                
+                justify-content: center;
+                align-items: center;                                
+                background-color: rgb(230, 230, 230);
+                border-radius: 7px;
+            }
+            .todo .menu .secciones .seccion img{
+                display: flex;    
+                width: 90%;
+                height: auto;
+                padding: 5px;                
+                margin: auto;      
+                transition: 0.1s;
+                cursor: pointer;
+            }            
+            .todo .menu .secciones .seccion img:hover{
+                transform: scale(1.01);
+                box-shadow: 0px 0px 10px 0px rgba(213, 77, 255, 0.166);
+            }
+        .todo .menu .contMenu{
+            display: flex;
+            height: 70vh;
+            width: 100%;
+            flex-direction: column;
+            justify-content: space-between;
+            margin: 1vw auto;
+            align-items: center;            
+        }
+            .todo .menu .contMenu .opciones{
+                display: flex;
+                flex-direction: column;
+                height: 45vh;
+                justify-content: space-evenly;                
+            }            
+            .todo .menu .contMenu img{
+                width: 2.7vw;
+                height: auto;
+                padding: 5px;
+                background-color: rgb(230, 230, 230);
+                border-radius: 7px;
+                transition: 0.1s;
+                cursor: pointer;
+            }            
+            .todo .menu .contMenu img:hover{
+                transform: scale(1.01);
+                box-shadow: 0px 0px 10px 0px rgba(213, 77, 255, 0.166);
+            }
+    .todo .feed{
+        display:flex;
+        width: 100%;              
+        margin-left: 10vh;
+        justify-content: start;        
+        max-height: 100%;
+        height: 450vh;  
+        overflow-y: scroll;
+    }
+    .todo .feed::-webkit-scrollbar {
+        width: 2vw;                      
+    }
+    .todo .feed::-webkit-scrollbar-track {
+        background-color: rgba(255, 255, 255, 0.158);
+        border-radius: 5px 0 0 5px;        
+    }      
+    .todo .feed::-webkit-scrollbar-thumb {
+        background: rgb(230, 230, 230);     
+        border-radius: 20px;       
+        border: 5px solid  rgb(230, 230, 230);
+        transition: 10s;
+    }
+    .todo .feed::-webkit-scrollbar-thumb:hover {
+        background: rgb(255, 255, 255);             
+        border: 5px solid  rgb(255, 255, 255);
+    }
+        .todo .feed .publicaciones{
+            width: 45vw;
+            height: 200vw;            
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            flex-direction: column;
+            position:sticky;
+            background-color: rgba(255, 255, 255, 0.158);
+            border-radius: 15px;
+            padding: 15px;
+
+        }
+            .todo .feed .publicaciones .top{
+                background-color: rgba(255, 255, 255, 0.39);
+                border-radius: 15px;
+                display: flex;
+                width: 100%;
+                height: 40vw;
+                padding: 5px;
+                margin: 5px;                
+                flex-direction: column;
+                justify-content: space-evenly;
+                
+            }
+            .todo .feed .publicaciones .top label{                
+                font-size: 2rem;
+                margin: 1vw 0 0 1vw;
+            }
+            .todo .feed .publicaciones .top img{        
+                width: 40vw;
+                height: auto;
+                margin: auto;
+                color: white;                
+            }
+        .todo .feed .rangos{                    
+            width: 5vw;
+            height: 200vw;
+            display: flex;
+            justify-content: space-around;
+            flex-direction: column;
+            margin-left: 1.5vw;
+
+        }
+            .todo .feed .rangos .top{                
+                
+                display: flex;
+                flex-direction: column;
+                height: 50vw;                        
+                justify-content: center;
+                align-items: center;
+                
+                
+
+
+            }
+            .todo .feed .rangos .top label{
+                font-size: 4rem;
+                margin: 15px;
+                padding: 15px;
+                width: 5vw;
+                border-radius: 15px;
+                background-color:rgba(255, 255, 255, 0.39);
+            }
+            .todo .feed .rangos .top img{
+                width: 6vw;
+                height: auto;
+                background-color: rgba(255, 255, 255, 0.39);
+                padding: 12px;
+                border-radius: 15px;
+                transition: 0.7s;
+                cursor: pointer;
+            }
+            .todo .feed .rangos .top img:hover{
+                background-color: rgb(230, 230, 230);
+                transform: scale(1.01);
+            }
+    body:has(header .perfilBoton:checked) .todo .modificarPerfil {
+        display: flex;
+    }
+    .todo .modificarPerfil{
+        display: none;         
+        right: 0;        
+        height: 93vh;  
+        width: 55vw;      
+        color: white;
+        background-color: rgba(255, 255, 255, 0.39);
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        border-left: 3px solid rgba(0, 0, 0, 0.334);
+        transition: 0.7s;
+    }        
+            .todo .modificarPerfil .perfil{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+            .todo .modificarPerfil .perfil .foto{                
+                width: 20vw;
+                height: 18vw;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                position: relative;        
+            }                        
+            .todo .modificarPerfil .perfil .foto img{
+                width: 70%;
+                margin: 1vw 0vw auto;
+            }                
+            .todo .modificarPerfil .perfil .foto label{
+                font-size: 1rem;
+                margin: auto;  
+                display: flex;      
+                justify-content: center;
+                align-items: center;
+            }
+                .todo .modificarPerfil .perfil .foto .file{
+                    position: absolute;
+                    top: 0px;
+                    right: 0px;
+                    bottom: 0px;
+                    left: 0px;
+                    width: 100%;
+                    height: 100%;
+                    opacity: 0;
+                    cursor: pointer;
+                }                
+            .todo .modificarPerfil .perfil .info{
+                display: flex;
+                flex-direction: column;                
+                margin: auto;
+                width: 90%;
+                height: 70%;
+            }
+            .todo .modificarPerfil .perfil .info span{
+                display: flex;
+                
+            }
+            .todo .modificarPerfil .perfil .info label{
+                margin: 1vh auto;
+                font-size: 1.5rem;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-evenly;
+                align-items: center;
+            }        
+        .todo .modificarPerfil .modificar{            
+            display: flex;
+            flex-direction: column;   
+            justify-content: center;     
+            align-items: center;
+        }
+        .todo .modificarPerfil .modificar input{
+            display: flex;
+            height: 5vh;
+            width: 25vw;    
+            margin: 1vw;
+            border-style: none;
+            padding: 10px;
+            border-radius: 5px;
+            color: black;
+            cursor: pointer;
+            font-size: 0.7rem;
+        }        
+        .todo .modificarPerfil .modificar input:focus{
+            box-shadow: 5px 5px 10px 0px rgba(214, 77, 255, 0.61);
+        }
+            .todo .modificarPerfil .modificar .botonEditar{                
+                display: flex;                
+                justify-content: center;
+                align-items: center;
+                height: 8vh;
+                margin-top: 2vw;
+            }
+            .todo .modificarPerfil .modificar .botonEditar .actualizarBoton{
+                width: 18vw;
+                height: 7vh;
+                border-radius: 10px;
+                border-style: none;
+                font-size: 1rem;
+                background-color: rgb(85, 10, 155);
+                color: white;
+                box-shadow: 5px 5px 10px 0px rgba(112, 0, 146, 0.336);
+                cursor: pointer;
+                transition: 0.7s;
+                display: flex;
+                justify-content: center;
+            }            
+            .todo .modificarPerfil .modificar .botonEditar .actualizarBoton:hover{
+                transform: scale(1.01);
+                box-shadow: 5px 5px 10px 0px rgba(207, 48, 255, 0.527);
+            }
+        .todo .modificarPerfil .botonBorrar{            
+            display: flex;
+            width: 25vw;
+            height: 2vw;
+            justify-content: space-between;
+            align-items: center;
+        }        
+        .todo .modificarPerfil .botonBorrar input{
+            width: 45%;
+            height: 100%;
+            padding: 5px;
+            background-color: rgb(255, 255, 255);
+            transition: 0.2s;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 0.7rem;
+            font-weight: 600;
+            margin: auto;
+            border-style: none;
+            cursor: pointer;
+
+        }
+        .todo .modificarPerfil .botonBorrar input:hover{
+            background-color: red;
+        }
+@media (max-width: 1000px) {    
+    .todo .feed .rangos .top label {
+        font-size: 2rem;
+    }
+    .todo .modificarPerfil .perfil .foto label{
+        font-size: 0.7rem;
+    
+    }
+    .todo .modificarPerfil .modificar input{
+        font-size: 0.5rem;
+    }
+    .todo .modificarPerfil .modificar .botonEditar .actualizarBoton{
+        font-size: 0.7rem;
+    }
+    .todo .modificarPerfil .botonBorrar input{
+        font-size: 0.5rem;
+    }
+    
+}
+@media (max-width: 680px) {    
+    .todo .feed .rangos .top label {
+        font-size: 1rem;
+    }
+    .todo .modificarPerfil .perfil .foto label{
+        font-size: 0.5rem;
+    
+    }
+    .todo .modificarPerfil .modificar input{
+        font-size: 0.2rem;
+    }
+    .todo .modificarPerfil .modificar .botonEditar .actualizarBoton{
+        font-size: 0.5rem;
+    }
+    .todo .modificarPerfil .botonBorrar input{
+        font-size: 0.2rem;
+    }
+    
+}
